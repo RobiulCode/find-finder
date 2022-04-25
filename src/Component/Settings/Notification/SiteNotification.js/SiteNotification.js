@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import {FaAngleLeft} from 'react-icons/fa'
 import {AiOutlineCheck} from 'react-icons/ai'
 
-export const SiteNotification = () => {
+export const SiteNotification = ({handleIndex}) => {
     const [siteLike,setSiteLike] = useState(false)
     const [siteComment,setSiteComment] = useState(false)
     const [siteDiscount,setSiteDiscount] = useState(false)
@@ -10,7 +10,7 @@ export const SiteNotification = () => {
     
     return (
         <div className="text-sm space-y-3">
-            <div className="notification">
+            <div className="notification cursor-pointer" onClick={()=>handleIndex(4)}>
                 <FaAngleLeft/>
                 <span className="">Site Notifications</span>
             </div>

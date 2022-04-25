@@ -1,8 +1,7 @@
 import React,{useState} from 'react';
 import {FaAngleRight} from 'react-icons/fa'
-import { Link, Outlet } from 'react-router-dom';
 
-const Notification = () => {
+const Notification = ({handleIndex}) => {
     const [pushNotification,setPushNotification]= useState(false)
     const [emailNotification,setEmailNotification]= useState(false)
     return (
@@ -36,16 +35,15 @@ const Notification = () => {
                     </span>
             </label>
 
-            <Link to='site' className='notification-Link'>
+            <span onClick={()=>handleIndex(8)} className='notification-Link'>
                 <span>Site Notification</span>
                 <span className='text-mycolor-200 text-xl'><FaAngleRight/></span>
-                </Link>
+                </span>
 
-            <Link to='toast' className='notification-Link'>
+            <span onClick={()=>handleIndex(9)} className='notification-Link'>
                 <span>Toast Notification</span>
                 <span className='text-mycolor-200 text-xl'><FaAngleRight/></span>
-            </Link>
-            <Outlet/>
+            </span>
         </div>
     );
 };

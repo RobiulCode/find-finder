@@ -2,12 +2,12 @@ import React,{useState} from 'react';
 import {FaAngleLeft} from 'react-icons/fa'
 import {AiOutlineCheck} from 'react-icons/ai'
 
-const ToastNotification = () => {
+const ToastNotification = ({handleIndex}) => {
     const[toastLike,setToastLike]= useState(false)
     const[toastComment,setToastComment]= useState(false)
     return (
         <div className="text-sm space-y-3">
-            <div className="notification">
+            <div className="notification cursor-pointer" onClick={()=>handleIndex(4)}>
                 <FaAngleLeft/>
                 <span className="">Toast Notifications</span>
             </div>

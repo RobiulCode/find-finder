@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link, Outlet} from 'react-router-dom';
 import {FaAngleRight} from 'react-icons/fa'
 import {AiFillEye} from 'react-icons/ai'
 
-const AccountInfo = () => {
+const AccountInfo = ({handleIndex}) => {
     return (
         <div className='text-sm space-y-3 mb-4 md:mb-0'>
             <h1 className='text-xl text-mycolor-200 font-bold'>Account Info</h1>
@@ -22,17 +21,16 @@ const AccountInfo = () => {
                 <span className='absolute text-xl text-gray-400 right-3 bottom-2'><AiFillEye/></span>
             </div>
             <div className="">
-            <Link to='' className='text-mycolor-200'>
+            <span onClick={()=>handleIndex(6)} className='text-mycolor-200 cursor-pointer'>
                     <span >Change password</span>
-                </Link>
+                </span>
             </div>
             <div className="space-y-2">
             <h2 className='text-xl text-mycolor-200 font-bold'>Account Management</h2>
-                <Link to='deleteAccount' className='notification-Link'>
+                <span onClick={()=>handleIndex(7)} className='notification-Link'>
                     <span >Delete Account</span>
                     <span className='text-mycolor-200 text-xl'><FaAngleRight/></span>
-                </Link>
-                <Outlet/>
+                </span>
             </div>
         </div>
     );

@@ -53,5 +53,5 @@ input[type=checkbox]{
     @apply absolute w-5 h-5 rounded-full border border-mycolor-200 flex justify-center items-center text-mycolor-200
 }
 .notification-Link{
-    @apply flex justify-between items-center h-[42px] px-2 w-full bg-mycolor-100 rounded-md
+    @apply flex justify-between items-center h-[42px] px-2 w-full bg-mycolor-100 rounded-md cursor-pointer
 }
