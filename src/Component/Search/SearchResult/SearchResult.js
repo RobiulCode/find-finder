@@ -7,7 +7,7 @@ export const SearchResult=({data})=>{
                 <span className="coverIcon top-1 "><BsThreeDotsVertical/></span>
             </div>
             <div className="flex justify-between px-2 py-1 relative">
-                <div className="absolute -top-10 left-6 z-40 ">
+                <div className="absolute -top-10 left-6 ">
                 <img src={profilePhoto} alt="" className="w-[91px] h-[91px] rounded-full" />
                 </div>
                 <div className="w-6/12 ml-28">
