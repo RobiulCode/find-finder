@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input[type=checkbox]{
+    @apply hidden
+}
+.input{
+    @apply w-full rounded-lg border border-mycolor-200 pl-4 outline-none h-[42px]
+}
+.cover-Icon{
+    @apply absolute right-1 p-1 bg-gray-100 rounded-full cursor-pointer text-mycolor-200
+}
+.profile-Img{
+    @apply  w-[220px] h-[220px] rounded-full
+}
+.profile-Img-Icon{
+    @apply absolute p-2 bg-gray-100 rounded-full cursor-pointer text-mycolor-200 left-16 top-44
+}
+.profile-Option{
+    @apply border border-mycolor-100 shadow-md shadow-mycolor-100 py-4 rounded
+}
+.profile-Option-Single{
+    @apply flex flex-col items-center text-mycolor-200 border-b-2 border-white hover:border-b-2 hover:border-mycolor-200 text-xl
+}
+.center{
+    @apply flex justify-center items-center
+}
+.header{
+    @apply flex justify-between items-center w-1/2 space-x-2
+}
+.header-Input{
+    @apply outline-none border border-mycolor-200 rounded-full py-1 px-4 placeholder:text-black w-full h-[42px]
+}
+.header-Icon{
+    @apply absolute flex items-center right-4 top-3 text-mycolor-200 text-xl
+}
+.header-btn{
+    @apply h-[42px] w-[122px] py-1 bg-mycolor-200 text-white rounded-full text-sm hidden sm:block
+}
+.footer{
+    @apply md:bg-white md:fixed  bottom-0 md:w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 text-sm border-t border-mycolor-200 px-2 py-2
+}
+.footer-Link{
+    @apply flex flex-col space-y-2 py-2 pl-2
+}
+.notification{
+    @apply flex items-center text-mycolor-200 text-xl font-bold space-x-2
+}
+.notification-CheckBox{
+    @apply flex items-center space-x-2 relative
+}
+.notification-Check{
+    @apply absolute w-5 h-5 rounded-full border border-mycolor-200 flex justify-center items-center text-mycolor-200
+}
+.notification-Link{
+    @apply flex justify-between items-center h-[42px] px-2 w-full bg-mycolor-100 rounded-md
+}
